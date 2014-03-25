@@ -30,83 +30,203 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FindCityResponse }
+     * Create an instance of {@link GetRouteTotalsResponse }
      * 
      */
-    public FindCityResponse createFindCityResponse() {
-        return new FindCityResponse();
+    public GetRouteTotalsResponse createGetRouteTotalsResponse() {
+        return new GetRouteTotalsResponse();
     }
 
     /**
-     * Create an instance of {@link CityLocationInfo }
+     * Create an instance of {@link RouteTotals }
      * 
      */
-    public CityLocationInfo createCityLocationInfo() {
-        return new CityLocationInfo();
+    public RouteTotals createRouteTotals() {
+        return new RouteTotals();
     }
 
     /**
-     * Create an instance of {@link GetXYResponse }
+     * Create an instance of {@link GetMultiRoute }
      * 
      */
-    public GetXYResponse createGetXYResponse() {
-        return new GetXYResponse();
+    public GetMultiRoute createGetMultiRoute() {
+        return new GetMultiRoute();
     }
 
     /**
-     * Create an instance of {@link Point }
+     * Create an instance of {@link ArrayOfMultiRouteRequest }
      * 
      */
-    public Point createPoint() {
-        return new Point();
+    public ArrayOfMultiRouteRequest createArrayOfMultiRouteRequest() {
+        return new ArrayOfMultiRouteRequest();
     }
 
     /**
-     * Create an instance of {@link FindAddressResponse }
+     * Create an instance of {@link RouteOptions }
      * 
      */
-    public FindAddressResponse createFindAddressResponse() {
-        return new FindAddressResponse();
+    public RouteOptions createRouteOptions() {
+        return new RouteOptions();
     }
 
     /**
-     * Create an instance of {@link AddressInfo }
+     * Create an instance of {@link GetRouteWithAlternatives }
      * 
      */
-    public AddressInfo createAddressInfo() {
-        return new AddressInfo();
+    public GetRouteWithAlternatives createGetRouteWithAlternatives() {
+        return new GetRouteWithAlternatives();
     }
 
     /**
-     * Create an instance of {@link FindRoad }
+     * Create an instance of {@link ArrayOfRouteStop }
      * 
      */
-    public FindRoad createFindRoad() {
-        return new FindRoad();
+    public ArrayOfRouteStop createArrayOfRouteStop() {
+        return new ArrayOfRouteStop();
     }
 
     /**
-     * Create an instance of {@link Road }
+     * Create an instance of {@link GetRouteTotalsBatchResponse }
      * 
      */
-    public Road createRoad() {
-        return new Road();
+    public GetRouteTotalsBatchResponse createGetRouteTotalsBatchResponse() {
+        return new GetRouteTotalsBatchResponse();
     }
 
     /**
-     * Create an instance of {@link GetXYRadiusWithMap }
+     * Create an instance of {@link ArrayOfRouteTotals }
      * 
      */
-    public GetXYRadiusWithMap createGetXYRadiusWithMap() {
-        return new GetXYRadiusWithMap();
+    public ArrayOfRouteTotals createArrayOfRouteTotals() {
+        return new ArrayOfRouteTotals();
     }
 
     /**
-     * Create an instance of {@link Address }
+     * Create an instance of {@link GetRouteResponse }
      * 
      */
-    public Address createAddress() {
-        return new Address();
+    public GetRouteResponse createGetRouteResponse() {
+        return new GetRouteResponse();
+    }
+
+    /**
+     * Create an instance of {@link RouteInfo }
+     * 
+     */
+    public RouteInfo createRouteInfo() {
+        return new RouteInfo();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteWithAlternativesResponse }
+     * 
+     */
+    public GetRouteWithAlternativesResponse createGetRouteWithAlternativesResponse() {
+        return new GetRouteWithAlternativesResponse();
+    }
+
+    /**
+     * Create an instance of {@link AlternativeRouteInfo }
+     * 
+     */
+    public AlternativeRouteInfo createAlternativeRouteInfo() {
+        return new AlternativeRouteInfo();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteDescription }
+     * 
+     */
+    public GetRouteDescription createGetRouteDescription() {
+        return new GetRouteDescription();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteSummaryResponse }
+     * 
+     */
+    public GetRouteSummaryResponse createGetRouteSummaryResponse() {
+        return new GetRouteSummaryResponse();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfRouteSummary }
+     * 
+     */
+    public ArrayOfRouteSummary createArrayOfRouteSummary() {
+        return new ArrayOfRouteSummary();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteDescriptionResponse }
+     * 
+     */
+    public GetRouteDescriptionResponse createGetRouteDescriptionResponse() {
+        return new GetRouteDescriptionResponse();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfSegmentDescription }
+     * 
+     */
+    public ArrayOfSegmentDescription createArrayOfSegmentDescription() {
+        return new ArrayOfSegmentDescription();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteTotals }
+     * 
+     */
+    public GetRouteTotals createGetRouteTotals() {
+        return new GetRouteTotals();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteSummary }
+     * 
+     */
+    public GetRouteSummary createGetRouteSummary() {
+        return new GetRouteSummary();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteTotalsBatch }
+     * 
+     */
+    public GetRouteTotalsBatch createGetRouteTotalsBatch() {
+        return new GetRouteTotalsBatch();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfRouteArray }
+     * 
+     */
+    public ArrayOfRouteArray createArrayOfRouteArray() {
+        return new ArrayOfRouteArray();
+    }
+
+    /**
+     * Create an instance of {@link GetMultiRouteResponse }
+     * 
+     */
+    public GetMultiRouteResponse createGetMultiRouteResponse() {
+        return new GetMultiRouteResponse();
+    }
+
+    /**
+     * Create an instance of {@link MultiRoute }
+     * 
+     */
+    public MultiRoute createMultiRoute() {
+        return new MultiRoute();
+    }
+
+    /**
+     * Create an instance of {@link GetRouteWithMap }
+     * 
+     */
+    public GetRouteWithMap createGetRouteWithMap() {
+        return new GetRouteWithMap();
     }
 
     /**
@@ -118,59 +238,59 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetXY }
+     * Create an instance of {@link GetRouteWithMapResponse }
      * 
      */
-    public GetXY createGetXY() {
-        return new GetXY();
+    public GetRouteWithMapResponse createGetRouteWithMapResponse() {
+        return new GetRouteWithMapResponse();
     }
 
     /**
-     * Create an instance of {@link FindPOI }
+     * Create an instance of {@link GetRoute }
      * 
      */
-    public FindPOI createFindPOI() {
-        return new FindPOI();
+    public GetRoute createGetRoute() {
+        return new GetRoute();
     }
 
     /**
-     * Create an instance of {@link City }
+     * Create an instance of {@link ArrayOfPOIDetails }
      * 
      */
-    public City createCity() {
-        return new City();
+    public ArrayOfPOIDetails createArrayOfPOIDetails() {
+        return new ArrayOfPOIDetails();
     }
 
     /**
-     * Create an instance of {@link ResultRange }
+     * Create an instance of {@link RoadType }
      * 
      */
-    public ResultRange createResultRange() {
-        return new ResultRange();
+    public RoadType createRoadType() {
+        return new RoadType();
     }
 
     /**
-     * Create an instance of {@link FindDistrict }
+     * Create an instance of {@link ArrayOfRouteInfo }
      * 
      */
-    public FindDistrict createFindDistrict() {
-        return new FindDistrict();
+    public ArrayOfRouteInfo createArrayOfRouteInfo() {
+        return new ArrayOfRouteInfo();
     }
 
     /**
-     * Create an instance of {@link District }
+     * Create an instance of {@link RouteDetails }
      * 
      */
-    public District createDistrict() {
-        return new District();
+    public RouteDetails createRouteDetails() {
+        return new RouteDetails();
     }
 
     /**
-     * Create an instance of {@link GetXYRadiusWithMapResponse }
+     * Create an instance of {@link RouteStop }
      * 
      */
-    public GetXYRadiusWithMapResponse createGetXYRadiusWithMapResponse() {
-        return new GetXYRadiusWithMapResponse();
+    public RouteStop createRouteStop() {
+        return new RouteStop();
     }
 
     /**
@@ -182,163 +302,83 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FindAddress }
+     * Create an instance of {@link ArrayOfPoint }
      * 
      */
-    public FindAddress createFindAddress() {
-        return new FindAddress();
+    public ArrayOfPoint createArrayOfPoint() {
+        return new ArrayOfPoint();
     }
 
     /**
-     * Create an instance of {@link AddressOptions }
+     * Create an instance of {@link ArrayOfRouteLine }
      * 
      */
-    public AddressOptions createAddressOptions() {
-        return new AddressOptions();
+    public ArrayOfRouteLine createArrayOfRouteLine() {
+        return new ArrayOfRouteLine();
     }
 
     /**
-     * Create an instance of {@link FindPOIResponse }
+     * Create an instance of {@link SegmentDescription }
      * 
      */
-    public FindPOIResponse createFindPOIResponse() {
-        return new FindPOIResponse();
+    public SegmentDescription createSegmentDescription() {
+        return new SegmentDescription();
     }
 
     /**
-     * Create an instance of {@link POIInfo }
+     * Create an instance of {@link Point }
      * 
      */
-    public POIInfo createPOIInfo() {
-        return new POIInfo();
+    public Point createPoint() {
+        return new Point();
     }
 
     /**
-     * Create an instance of {@link GetRoadXYResponse }
+     * Create an instance of {@link Vehicle }
      * 
      */
-    public GetRoadXYResponse createGetRoadXYResponse() {
-        return new GetRoadXYResponse();
+    public Vehicle createVehicle() {
+        return new Vehicle();
     }
 
     /**
-     * Create an instance of {@link FindRoadResponse }
+     * Create an instance of {@link POIDetails }
      * 
      */
-    public FindRoadResponse createFindRoadResponse() {
-        return new FindRoadResponse();
+    public POIDetails createPOIDetails() {
+        return new POIDetails();
     }
 
     /**
-     * Create an instance of {@link RoadInfo }
+     * Create an instance of {@link ArrayOfSingleRouteTotals }
      * 
      */
-    public RoadInfo createRoadInfo() {
-        return new RoadInfo();
+    public ArrayOfSingleRouteTotals createArrayOfSingleRouteTotals() {
+        return new ArrayOfSingleRouteTotals();
     }
 
     /**
-     * Create an instance of {@link GetRoadXY }
+     * Create an instance of {@link ArrayOfString }
      * 
      */
-    public GetRoadXY createGetRoadXY() {
-        return new GetRoadXY();
+    public ArrayOfString createArrayOfString() {
+        return new ArrayOfString();
     }
 
     /**
-     * Create an instance of {@link GetAddressResponse }
+     * Create an instance of {@link SingleRouteTotals }
      * 
      */
-    public GetAddressResponse createGetAddressResponse() {
-        return new GetAddressResponse();
+    public SingleRouteTotals createSingleRouteTotals() {
+        return new SingleRouteTotals();
     }
 
     /**
-     * Create an instance of {@link AddressLocation }
+     * Create an instance of {@link City }
      * 
      */
-    public AddressLocation createAddressLocation() {
-        return new AddressLocation();
-    }
-
-    /**
-     * Create an instance of {@link FindCity }
-     * 
-     */
-    public FindCity createFindCity() {
-        return new FindCity();
-    }
-
-    /**
-     * Create an instance of {@link FindDistrictResponse }
-     * 
-     */
-    public FindDistrictResponse createFindDistrictResponse() {
-        return new FindDistrictResponse();
-    }
-
-    /**
-     * Create an instance of {@link DistrictInfo }
-     * 
-     */
-    public DistrictInfo createDistrictInfo() {
-        return new DistrictInfo();
-    }
-
-    /**
-     * Create an instance of {@link GetAddress }
-     * 
-     */
-    public GetAddress createGetAddress() {
-        return new GetAddress();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfAddressLocation }
-     * 
-     */
-    public ArrayOfAddressLocation createArrayOfAddressLocation() {
-        return new ArrayOfAddressLocation();
-    }
-
-    /**
-     * Create an instance of {@link POILocation }
-     * 
-     */
-    public POILocation createPOILocation() {
-        return new POILocation();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfPOILocation }
-     * 
-     */
-    public ArrayOfPOILocation createArrayOfPOILocation() {
-        return new ArrayOfPOILocation();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfRoadLocation }
-     * 
-     */
-    public ArrayOfRoadLocation createArrayOfRoadLocation() {
-        return new ArrayOfRoadLocation();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfCityLocation }
-     * 
-     */
-    public ArrayOfCityLocation createArrayOfCityLocation() {
-        return new ArrayOfCityLocation();
-    }
-
-    /**
-     * Create an instance of {@link CityLocation }
-     * 
-     */
-    public CityLocation createCityLocation() {
-        return new CityLocation();
+    public City createCity() {
+        return new City();
     }
 
     /**
@@ -350,11 +390,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RoadLocation }
+     * Create an instance of {@link RouteArray }
      * 
      */
-    public RoadLocation createRoadLocation() {
-        return new RoadLocation();
+    public RouteArray createRouteArray() {
+        return new RouteArray();
     }
 
     /**
@@ -366,27 +406,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DistrictLocation }
+     * Create an instance of {@link RouteSummary }
      * 
      */
-    public DistrictLocation createDistrictLocation() {
-        return new DistrictLocation();
+    public RouteSummary createRouteSummary() {
+        return new RouteSummary();
     }
 
     /**
-     * Create an instance of {@link RoadDetail }
+     * Create an instance of {@link RouteLine }
      * 
      */
-    public RoadDetail createRoadDetail() {
-        return new RoadDetail();
+    public RouteLine createRouteLine() {
+        return new RouteLine();
     }
 
     /**
-     * Create an instance of {@link ArrayOfDistrictLocation }
+     * Create an instance of {@link MultiRouteRequest }
      * 
      */
-    public ArrayOfDistrictLocation createArrayOfDistrictLocation() {
-        return new ArrayOfDistrictLocation();
+    public MultiRouteRequest createMultiRouteRequest() {
+        return new MultiRouteRequest();
+    }
+
+    /**
+     * Create an instance of {@link TollFeeDetails }
+     * 
+     */
+    public TollFeeDetails createTollFeeDetails() {
+        return new TollFeeDetails();
     }
 
 }
