@@ -43,7 +43,9 @@ public class AddressFinderTest {
 		Point expected = new Point();
 		expected.setX(-43.4375259);
 		expected.setY(-23.0070981);
-		Assert.assertEquals(expected, service.getXY(address, token));
+		Point atual = service.getXY(address, token);
+		Assert.assertEquals(expected.getX(), atual.getX());
+		Assert.assertEquals(expected.getY(), atual.getY());
 	}
 
 }

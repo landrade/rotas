@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="addressFinderclient" class="br.com.maplink2.webservices.AddressFinderSoap"
+		factory-bean="addressFinderclientFactory" factory-method="create" />
+	<bean id="addressFinderclientFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+		<property name="serviceClass"
+			value="br.com.maplink2.webservices.AddressFinderSoap" />
+		<property name="address"
+			value="http://services.maplink.com.br/webservices/v3.1/AddressFinder/AddressFinder.asmx" />
+	</bean>
+
+	<bean id="routeClient" class="br.com.maplink2.webservices.RouteSoap"
+		factory-bean="routeClientFactory" factory-method="create" />
+	<bean id="routeClientFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+		<property name="serviceClass" value="br.com.maplink2.webservices.RouteSoap" />
+		<property name="address"
+			value="http://services.maplink.com.br/webservices/v3/route/route.asmx" />
+	</bean>
+
+	<bean id="webserviceToken" class="java.lang.String">
+		<constructor-arg value="c13iyCvmcC9mzwkLd0LCbmYC5mUF5m2jNGNtNGt6NmK6NJK=" />
+	</bean>
+</beans>
