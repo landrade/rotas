@@ -85,7 +85,7 @@ public class AddressServiceMapLinkImpl implements AddressService {
 			return new AsyncResult<Point>(null);
 		}
 
-		Point point = new Point(maplinkPoint.getX(), maplinkPoint.getY());
+		Point point = new Point(maplinkPoint.getX(), maplinkPoint.getY(), address);
 		return new AsyncResult<Point>(point);
 	}
 

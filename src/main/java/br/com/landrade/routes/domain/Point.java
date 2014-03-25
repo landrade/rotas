@@ -9,6 +9,8 @@ public class Point {
 	private final Double x;
 	
 	private final Double y;
+	
+	private final Address address;
 
 	/* Constructors */
 	
@@ -17,9 +19,10 @@ public class Point {
 	 * @param x
 	 * @param y
 	 */
-	public Point(Double x, Double y) {
+	public Point(Double x, Double y, Address address) {
 		this.x = Objects.requireNonNull(x, "X cannot be null");
 		this.y = Objects.requireNonNull(y, "Y cannot be null");
+		this.address = Objects.requireNonNull(address, "Address cannot be null");
 	}
 
 	/* Getters */
@@ -30,6 +33,10 @@ public class Point {
 
 	public Double getY() {
 		return y;
+	}
+	
+	public Address getAddress() {
+		return address;
 	}
 	
 	/* Equals and Hascode */

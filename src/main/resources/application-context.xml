@@ -10,18 +10,39 @@
 		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd 
 		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
 
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	
 	<bean id="addressFinderclient" class="br.com.maplink2.webservices.AddressFinderSoap"
-		factory-bean="clientFactory" factory-method="create" />
-	<bean id="clientFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+		factory-bean="addressFinderclientFactory" factory-method="create" />
+	<bean id="addressFinderclientFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
 		<property name="serviceClass"
 			value="br.com.maplink2.webservices.AddressFinderSoap" />
 		<property name="address"
 			value="http://services.maplink.com.br/webservices/v3.1/AddressFinder/AddressFinder.asmx" />
 	</bean>
 
+	<bean id="routeClient" class="br.com.maplink2.webservices.RouteSoap"
+		factory-bean="routeClientFactory" factory-method="create" />
+	<bean id="routeClientFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+		<property name="serviceClass" value="br.com.maplink2.webservices.RouteSoap" />
+		<property name="address"
+			value="http://services.maplink.com.br/webservices/v3/route/route.asmx" />
+	</bean>
+	
+	<jaxws:endpoint id="ws-soap" address="/routeSoap">
+		<jaxws:implementor>
+			<bean parent="routeResourceSoap"/>
+		</jaxws:implementor>
+	</jaxws:endpoint>
+
 	<context:annotation-config />
 	<context:component-scan base-package="br.com.landrade.routes" />
 
+	<bean id="routeResourceSoap" class="br.com.landrade.routes.webservices.RouteResourceSoapImpl">
+		<property name="routeService" ref="routeService"/>
+	</bean>
 
 
 	<bean id="webserviceToken" class="java.lang.String">
